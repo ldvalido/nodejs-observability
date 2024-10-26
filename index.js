@@ -14,4 +14,9 @@ app.get('/metrics', async (_req, res) => {
   }
 });
 
+app.get('/', async(_req, res) => {
+  res.send('Hola Mundo')
+  res.end()
+})
+
 app.listen(4001, '0.0.0.0');
